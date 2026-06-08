@@ -16,11 +16,264 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Sistem Roti Kuasong',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.brown,
-        useMaterial3: true,
-      ),
+      theme: ThemeData(primarySwatch: Colors.brown, useMaterial3: true),
       home: const BranchSelectionScreen(),
+    );
+  }
+}
+
+// ================ MAIN BRANCH SCREEN (Jakarta) =================
+class MainBranchJakartaScreen extends StatelessWidget {
+  const MainBranchJakartaScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Cabang Jakarta"),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
+      body: const Center(
+        child: Text(
+          "Selamat datang di\nCabang Jakarta",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 22),
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        currentIndex: 0,
+        onTap: (index) {
+          if (index == 0) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const EmployeesScreen()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ProductsScreen()),
+            );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ExpensesScreen()),
+            );
+          } else if (index == 3) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const MaterialsScreen()),
+            );
+          }
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.people), label: "Karyawan"),
+          BottomNavigationBarItem(icon: Icon(Icons.inventory), label: "Produk"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.money_off),
+            label: "Pengeluaran",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.warehouse),
+            label: "Material",
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ================ MAIN BRANCH SCREEN (Bandung) =================
+class MainBranchBandungScreen extends StatelessWidget {
+  const MainBranchBandungScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Cabang Bandung"),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
+      body: const Center(
+        child: Text(
+          "Selamat datang di\nCabang Bandung",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 22),
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        currentIndex: 0,
+        onTap: (index) {
+          if (index == 0) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const EmployeesScreen()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ProductsScreen()),
+            );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ExpensesScreen()),
+            );
+          } else if (index == 3) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const MaterialsScreen()),
+            );
+          }
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.people), label: "Karyawan"),
+          BottomNavigationBarItem(icon: Icon(Icons.inventory), label: "Produk"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.money_off),
+            label: "Pengeluaran",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.warehouse),
+            label: "Material",
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ================ MAIN BRANCH SCREEN (Semarang) =================
+class MainBranchSemarangScreen extends StatelessWidget {
+  const MainBranchSemarangScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Cabang Semarang"),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
+      body: const Center(
+        child: Text(
+          "Selamat datang di\nCabang Semarang",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 22),
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        currentIndex: 0,
+        onTap: (index) {
+          if (index == 0) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const EmployeesScreen()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ProductsScreen()),
+            );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ExpensesScreen()),
+            );
+          } else if (index == 3) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const MaterialsScreen()),
+            );
+          }
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.people), label: "Karyawan"),
+          BottomNavigationBarItem(icon: Icon(Icons.inventory), label: "Produk"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.money_off),
+            label: "Pengeluaran",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.warehouse),
+            label: "Material",
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ================ MAIN BRANCH SCREEN (Bekasi) =================
+class MainBranchBekasiScreen extends StatelessWidget {
+  const MainBranchBekasiScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Cabang Bekasi"),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
+      body: const Center(
+        child: Text(
+          "Selamat datang di\nCabang Bekasi",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 22),
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        currentIndex: 0,
+        onTap: (index) {
+          if (index == 0) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const EmployeesScreen()),
+            );
+          } else if (index == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ProductsScreen()),
+            );
+          } else if (index == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ExpensesScreen()),
+            );
+          } else if (index == 3) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const MaterialsScreen()),
+            );
+          }
+        },
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.people), label: "Karyawan"),
+          BottomNavigationBarItem(icon: Icon(Icons.inventory), label: "Produk"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.money_off),
+            label: "Pengeluaran",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.warehouse),
+            label: "Material",
+          ),
+        ],
+      ),
     );
   }
 }
@@ -64,7 +317,9 @@ class BranchSelectionScreen extends StatelessWidget {
                     Colors.blue,
                     () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (_) => const MainBranchScreen()),
+                      MaterialPageRoute(
+                        builder: (_) => const MainBranchScreen(),
+                      ),
                     ),
                   ),
                   _buildBranchCard(
@@ -73,7 +328,12 @@ class BranchSelectionScreen extends StatelessWidget {
                     "Jakarta Pusat",
                     Icons.location_city,
                     Colors.green,
-                    () => _showComingSoon(context),
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const MainBranchJakartaScreen(),
+                      ),
+                    ),
                   ),
                   _buildBranchCard(
                     context,
@@ -81,7 +341,12 @@ class BranchSelectionScreen extends StatelessWidget {
                     "Bandung, Jawa Barat",
                     Icons.location_city,
                     Colors.orange,
-                    () => _showComingSoon(context),
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const MainBranchBandungScreen(),
+                      ),
+                    ),
                   ),
                   _buildBranchCard(
                     context,
@@ -89,7 +354,12 @@ class BranchSelectionScreen extends StatelessWidget {
                     "Semarang, Jawa Tengah",
                     Icons.location_city,
                     Colors.purple,
-                    () => _showComingSoon(context),
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const MainBranchSemarangScreen(),
+                      ),
+                    ),
                   ),
                   _buildBranchCard(
                     context,
@@ -97,7 +367,12 @@ class BranchSelectionScreen extends StatelessWidget {
                     "Bekasi, Jawa Barat",
                     Icons.location_city,
                     Colors.teal,
-                    () => _showComingSoon(context),
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const MainBranchBekasiScreen(),
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -108,8 +383,14 @@ class BranchSelectionScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildBranchCard(BuildContext context, String title, String subtitle,
-      IconData icon, Color color, VoidCallback onTap) {
+  Widget _buildBranchCard(
+    BuildContext context,
+    String title,
+    String subtitle,
+    IconData icon,
+    Color color,
+    VoidCallback onTap,
+  ) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
       child: ListTile(
@@ -118,7 +399,10 @@ class BranchSelectionScreen extends StatelessWidget {
           backgroundColor: color.withOpacity(0.1),
           child: Icon(icon, color: color, size: 30),
         ),
-        title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+        title: Text(
+          title,
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+        ),
         subtitle: Text(subtitle),
         trailing: const Icon(Icons.arrow_forward_ios),
         onTap: onTap,
@@ -128,7 +412,9 @@ class BranchSelectionScreen extends StatelessWidget {
 
   void _showComingSoon(BuildContext context) {
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text("Fitur Cabang ini sedang dalam pengembangan")),
+      const SnackBar(
+        content: Text("Fitur Cabang ini sedang dalam pengembangan"),
+      ),
     );
   }
 }
@@ -160,20 +446,38 @@ class MainBranchScreen extends StatelessWidget {
         onTap: (index) {
           // Navigasi antar screen
           if (index == 0) {
-            Navigator.push(context, MaterialPageRoute(builder: (_) => const EmployeesScreen()));
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const EmployeesScreen()),
+            );
           } else if (index == 1) {
-            Navigator.push(context, MaterialPageRoute(builder: (_) => const ProductsScreen()));
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ProductsScreen()),
+            );
           } else if (index == 2) {
-            Navigator.push(context, MaterialPageRoute(builder: (_) => const ExpensesScreen()));
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const ExpensesScreen()),
+            );
           } else if (index == 3) {
-            Navigator.push(context, MaterialPageRoute(builder: (_) => const MaterialsScreen()));
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const MaterialsScreen()),
+            );
           }
         },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.people), label: "Karyawan"),
           BottomNavigationBarItem(icon: Icon(Icons.inventory), label: "Produk"),
-          BottomNavigationBarItem(icon: Icon(Icons.money_off), label: "Pengeluaran"),
-          BottomNavigationBarItem(icon: Icon(Icons.warehouse), label: "Material"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.money_off),
+            label: "Pengeluaran",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.warehouse),
+            label: "Material",
+          ),
         ],
       ),
     );
